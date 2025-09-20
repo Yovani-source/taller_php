@@ -50,13 +50,15 @@
     }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Acrónimo</title>
+
+    <link rel="stylesheet" href="acronimo.css">
 </head>
 <body>
-    <h1>Acronio</h1>
+    <h1>Acrónimo</h1>
     <form method="post">
         <input type="text" name="frase" placeholder="Escribe el acronimo">
         <button type="submit">Generar</button>
