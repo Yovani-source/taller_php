@@ -11,7 +11,7 @@
         <form method="post">
             <label>Ingrese el numero</label>
             <br>
-            <input type="text" name="numero" placeholder="Ejemplo: 10" required>
+            <input type="text" name="numero" placeholder="Ejemplo: 54" required>
             <br>
             <button type="submit">Convertir </button>
         </form>
