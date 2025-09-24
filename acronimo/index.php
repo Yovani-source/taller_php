@@ -59,10 +59,13 @@
 </head>
 <body>
     <h1>Acrónimo</h1>
-    <form method="post">
+    <div class="contenedor">
+        <form method="post">
         <input type="text" name="frase" placeholder="Escribe el acronimo">
         <button type="submit">Generar</button>
     </form>
+    </div>
+    
 
     <?php if ($salida !== ""): ?>
     <div id="salida">Acrónimo: <?= htmlspecialchars($salida, ENT_QUOTES) ?></div>
