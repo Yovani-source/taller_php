@@ -27,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     echo "<div class='resultado'>";
     echo "<p><strong>A:</strong> {" . implode(', ', $A) . "}</p>";
     echo "<p><strong>B:</strong> {" . implode(', ', $B) . "}</p>";
-    echo "<p><strong>Unión:</strong> {" . implode(', ', array_unique(array_merge($A, $B))) . "}</p>";
-    echo "<p><strong>Intersección:</strong> {" . implode(', ', array_intersect($A, $B)) . "}</p>";
+    echo "<p><strong>Union:</strong> {" . implode(', ', array_unique(array_merge($A, $B))) . "}</p>";
+    echo "<p><strong>Interseccion:</strong> {" . implode(', ', array_intersect($A, $B)) . "}</p>";
     echo "<p><strong>A - B:</strong> {" . implode(', ', array_diff($A, $B)) . "}</p>";
     echo "<p><strong>B - A:</strong> {" . implode(', ', array_diff($B, $A)) . "}</p>";
     echo "</div>";
