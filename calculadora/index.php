@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <title>factorial, fibonacci</title>
-<link rel="stylesheet" href="diseño.css">
+<link rel="stylesheet" href="calculadora.css">
 </head>
 <body>
     <h1>Calculadora</h1>
