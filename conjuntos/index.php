@@ -9,10 +9,10 @@
     <h1>operaciones de conjuntos</h1>
 
     <form method="post">
-        <label>conjunto A (separar cada termino por comas):</label>
+        <label>conjunto A:</label>
         <input type="text" name="A" required>
         <br>
-        <label>conjunto B (separar cada termino por comas):</label>
+        <label>conjunto B:</label>
         <input type="text" name="B" required>
         <br>    
         <button type="submit">calcular</button>
