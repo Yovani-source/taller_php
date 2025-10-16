@@ -33,6 +33,12 @@ input[type="text"] {
     border: 1px solid #ccc;
 }
 
+input[type="text"]:focus {
+    border-color: #007bff;
+    background-color: #eef8ff;
+    outline: none;
+}
+
 button {
     margin-top: 10px;
     padding: 8px 15px;
@@ -41,10 +47,12 @@ button {
     background-color: #333;
     color: #fff;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
     background-color: #555;
+    transform: scale(1.05);
 }
 
 .resultado {
@@ -54,8 +62,21 @@ button:hover {
     width: 300px;
     padding: 10px;
     margin-top: 20px;
+    animation: resaltar 3s ease-in-out 1;
 }
 
-.resultado p {
-    margin: 5px 0;
+.resultado p::first-letter {
+    color: #007bff;
+    font-size: 22px;
+}
+
+form > label {
+    color: #222;
+    font-weight: bold;
+}
+
+@keyframes resaltar {
+    0% { background-color: #fff; }
+    50% { background-color: #d0f0ff; }
+    100% { background-color: #fff; }
 }
