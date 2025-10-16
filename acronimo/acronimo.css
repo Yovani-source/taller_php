@@ -1,52 +1,56 @@
+
 body {
-    display: flex;
-    justify-content: center;   
-    align-items: center;      
-    min-height: 100vh;         
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #a5a5a5;
-    flex-direction: column;   
+  display: flex;
+  justify-content: center;   
+  align-items: center;      
+  min-height: 100vh;         
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #a5a5a5;
+  flex-direction: column;   
 } 
 
 .contenedor {
-    background-color: white; /* El cuadro blanco */
+  background-color: white; 
     padding: 30px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Sombra */
-    text-align: center;
-    width: 350px; /* Ancho fijo */
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(18, 18, 18, 0.505); 
+  text-align: center;
+  width: 350px;
 }
 
-h1 {
-    margin-bottom: 20px;
+
+button:hover {
+  background-color: #007bff;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
-form {
-    display: flex;
-    gap: 10px;
-}  
-
-input[type="text"] {
-    padding: 10px;
-    border: 2px solid #000000;
-    border-radius: 8px;
-    font-size: 16px;
+input:focus {
+  border-color: #007bff;
+  outline: none;
 }
 
-button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    background-color: #333;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+#salida::first-letter {
+  color: rgb(20, 123, 220);
+  font-size: 25px;
 }
 
-#salida {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
+form > input {
+  background-color: #f0e0e0;
+}
+
+
+@keyframes mover {
+  0% { transform: translateY(0); background-color: orange; }
+  50% { transform: translateY(50px); background-color: gold; }
+  100% { transform: translateY(0); background-color: orange; }
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 40px;
+  animation: mover 3s infinite;
 }
